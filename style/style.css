@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: #6690ff;
+  height: 50px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 30px;
+  height: 100%;
+  width: 200px;
+  background-color: #1e21ff;
+}
+
+.navigation__bars {
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+.navigation__logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navigation__bars, .navigation__logo {
+  color: #fff;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.card__Sidebar {
+  background-color: #463bfb;
+  height: 100%;
+}
+
+.Sidebar {
+  width: 200px;
+}
+
+.Sidebar__menu {
+  padding: 50px 20px 20px 20px;
+  color: #6793fc;
+}
+
+.Sidebar__dashboard, .Sidebar__message {
+  padding: 10px;
+}
+
+.card__main {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: #f2f5fa;
+  width: 100%;
+  height: 100%;
+}
+
+.main__title {
+  padding: 30px;
+}
+
+.block {
+  position: relative;
+  top: 200px;
+  left: 300px;
+}
+
+.block__1, .block__2 {
+  background-color: white;
+  width: 500px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.block__1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+}
+
+.block__2 {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
