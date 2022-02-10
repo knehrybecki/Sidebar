@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  background-color: #6690ff;
+  height: 50px;
+}
+
+.card__sidebar.showMenu {
+  -webkit-animation: openMenu 500ms linear  both;
+          animation: openMenu 500ms linear  both;
+}
+
+@-webkit-keyframes openMenu {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes openMenu {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+.card__sidebar {
+  -webkit-animation: closeMenu 500ms linear  both;
+          animation: closeMenu 500ms linear  both;
+}
+
+@-webkit-keyframes closeMenu {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+.sidebar__menu.showMenu {
+  -webkit-animation: openItem 500ms linear  both;
+          animation: openItem 500ms linear  both;
+  position: absolute;
+  width: 150px;
+}
+
+@-webkit-keyframes openItem {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes openItem {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.sidebar__menu {
+  -webkit-animation: closeItem 500ms linear  both;
+          animation: closeItem 500ms linear  both;
+  position: absolute;
+  width: 150px;
+}
+
+@-webkit-keyframes closeItem {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -150px;
+  }
+}
+
+@keyframes closeItem {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -150px;
+  }
+}
+
+.fa-solid.fa-xmark {
+  display: none;
+}
+
+.fas.fa-bars {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.navigation.showMenu {
+  left: 0px;
+  -webkit-animation: openMenu 500ms linear  both;
+          animation: openMenu 500ms linear  both;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 30px;
+  height: 50px;
+  width: 200px;
+  background-color: #1e21ff;
+  -webkit-animation: closeMenu 500ms linear  both;
+          animation: closeMenu 500ms linear  both;
+}
+
+.navigation__bars {
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+.navigation__logo {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navigation__bars, .navigation__logo {
+  color: #fff;
+}
+
+.navigation__logo {
+  position: absolute;
+  -webkit-animation: openLogoItem 400ms linear  both;
+          animation: openLogoItem 400ms linear  both;
+}
+
+@-webkit-keyframes openLogoItem {
+  0% {
+    left: 50px;
+  }
+  100% {
+    left: -150px;
+  }
+}
+
+@keyframes openLogoItem {
+  0% {
+    left: 50px;
+  }
+  100% {
+    left: -150px;
+  }
+}
+
+.navigation__logo.showMenu {
+  position: absolute;
+  -webkit-animation: closeLogoItem 500ms linear  both;
+          animation: closeLogoItem 500ms linear  both;
+}
+
+@-webkit-keyframes closeLogoItem {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+
+@keyframes closeLogoItem {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.card__sidebar {
+  background-color: #463bfb;
+  height: 100%;
+  position: relative;
+  width: 0px;
+}
+
+.sidebar {
+  width: 200px;
+}
+
+.sidebar__menu {
+  padding: 50px 20px 20px 20px;
+  color: #6793fc;
+}
+
+.sidebar__dashboard, .sidebar__message {
+  padding: 10px;
+}
+
+.card__main {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: #f2f5fa;
+  width: 100%;
+  height: 100%;
+}
+
+.main__title {
+  padding: 30px;
+}
+
+.block {
+  position: relative;
+  top: 200px;
+  left: 300px;
+}
+
+.block__1, .block__2 {
+  background-color: #fff;
+  width: 500px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.block__1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+}
+
+.block__2 {
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+  position: absolute;
+}
+
+@media (max-width: 480px), (min-width: 481px) and (max-width: 1019px) {
+  .block {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
