@@ -1,6 +1,3 @@
-.card__sidebar.showMenu
-        animation: openMenu 500ms linear  both
-
 @keyframes openMenu
     0% 
         width: 0px
@@ -8,63 +5,27 @@
     100%
         width: 200px
 
-.card__sidebar
-        animation: closeMenu 500ms linear  both
-
 @keyframes closeMenu
     0% 
        width: 200px
         
     100%
         width: 0px
-        
-.sidebar__menu.showMenu
-    animation: openItem 500ms linear  both
-    position: absolute
-    width: 150px
-
-@keyframes openItem
-    0%    
-        left: -150px   
-
-    100%
-        left: 0px
-
-.sidebar__menu
-    animation: closeItem 500ms linear  both
-    position: absolute
-    width: 150px
-
-@keyframes closeItem
-    0%    
-        left: 0px
-
-    100%
-        left: -150px
 
 .fa-solid.fa-xmark
     display: none
 
-.fas.fa-bars
-    position: absolute
-    left: 12px
-    top: 12px
-
-.navigation.showMenu
-    left: 0px
-    animation: openMenu 500ms linear  both
-
 .navigation
     @include displayflex(center,flex-start,row nowrap)
-    gap: 30px
-    height: 50px
-    width: 200px
-    background-color: $header-sidebar-color
-    animation: closeMenu 500ms linear  both
+    background-color: #1e21ff
+    height: 52px
+    gap: 15px
+    position: relative
+    top: -50px
 
     &__bars
         font-size: 25px
-        padding-left: 15px
+        padding-left: 15px   
 
     &__logo
         text-transform: uppercase
@@ -74,25 +35,31 @@
     &__bars,
     &__logo
         color: $menu-text-color
-        
-.navigation__logo
-    position: absolute
-    animation: openLogoItem 400ms linear  both
 
-@keyframes openLogoItem
-    0%    
-        left: 50px   
+.logo
+    width: 150px
+    
+.menu
+    background-color: $sidebar-background
+    height: 100%
 
-    100%
-        left: -150px
+.menu
 
-.navigation__logo.showMenu
-    position: absolute
-    animation: closeLogoItem 500ms linear  both
+    &__list
+        padding: 50px 20px 20px 20px
+        display: flex
+        flex-flow: column nowrap
+        gap: 5px
 
-@keyframes closeLogoItem
-    0%    
-        left: -150px   
-
-    100%
-        left: 50px
+    &__item
+        color: $menu-sidebar-deactive
+        overflow: hidden
+        display: flex
+        flex-flow: row nowrap
+        gap: 5px 
+    
+    &__link
+        text-decoration-line: none
+        color: $menu-sidebar-deactive
+        padding-left: 5px
+    

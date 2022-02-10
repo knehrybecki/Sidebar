@@ -16,11 +16,6 @@ body {
   height: 50px;
 }
 
-.card__sidebar.showMenu {
-  -webkit-animation: openMenu 500ms linear  both;
-          animation: openMenu 500ms linear  both;
-}
-
 @-webkit-keyframes openMenu {
   0% {
     width: 0px;
@@ -37,11 +32,6 @@ body {
   100% {
     width: 200px;
   }
-}
-
-.card__sidebar {
-  -webkit-animation: closeMenu 500ms linear  both;
-          animation: closeMenu 500ms linear  both;
 }
 
 @-webkit-keyframes closeMenu {
@@ -62,70 +52,8 @@ body {
   }
 }
 
-.sidebar__menu.showMenu {
-  -webkit-animation: openItem 500ms linear  both;
-          animation: openItem 500ms linear  both;
-  position: absolute;
-  width: 150px;
-}
-
-@-webkit-keyframes openItem {
-  0% {
-    left: -150px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-
-@keyframes openItem {
-  0% {
-    left: -150px;
-  }
-  100% {
-    left: 0px;
-  }
-}
-
-.sidebar__menu {
-  -webkit-animation: closeItem 500ms linear  both;
-          animation: closeItem 500ms linear  both;
-  position: absolute;
-  width: 150px;
-}
-
-@-webkit-keyframes closeItem {
-  0% {
-    left: 0px;
-  }
-  100% {
-    left: -150px;
-  }
-}
-
-@keyframes closeItem {
-  0% {
-    left: 0px;
-  }
-  100% {
-    left: -150px;
-  }
-}
-
 .fa-solid.fa-xmark {
   display: none;
-}
-
-.fas.fa-bars {
-  position: absolute;
-  left: 12px;
-  top: 12px;
-}
-
-.navigation.showMenu {
-  left: 0px;
-  -webkit-animation: openMenu 500ms linear  both;
-          animation: openMenu 500ms linear  both;
 }
 
 .navigation {
@@ -142,12 +70,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  gap: 30px;
-  height: 50px;
-  width: 200px;
   background-color: #1e21ff;
-  -webkit-animation: closeMenu 500ms linear  both;
-          animation: closeMenu 500ms linear  both;
+  height: 52px;
+  gap: 15px;
+  position: relative;
+  top: -50px;
 }
 
 .navigation__bars {
@@ -165,52 +92,45 @@ body {
   color: #fff;
 }
 
-.navigation__logo {
-  position: absolute;
-  -webkit-animation: openLogoItem 400ms linear  both;
-          animation: openLogoItem 400ms linear  both;
+.logo {
+  width: 150px;
 }
 
-@-webkit-keyframes openLogoItem {
-  0% {
-    left: 50px;
-  }
-  100% {
-    left: -150px;
-  }
+.menu {
+  background-color: #463bfb;
+  height: 100%;
 }
 
-@keyframes openLogoItem {
-  0% {
-    left: 50px;
-  }
-  100% {
-    left: -150px;
-  }
+.menu__list {
+  padding: 50px 20px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  gap: 5px;
 }
 
-.navigation__logo.showMenu {
-  position: absolute;
-  -webkit-animation: closeLogoItem 500ms linear  both;
-          animation: closeLogoItem 500ms linear  both;
+.menu__item {
+  color: #6793fc;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  gap: 5px;
 }
 
-@-webkit-keyframes closeLogoItem {
-  0% {
-    left: -150px;
-  }
-  100% {
-    left: 50px;
-  }
-}
-
-@keyframes closeLogoItem {
-  0% {
-    left: -150px;
-  }
-  100% {
-    left: 50px;
-  }
+.menu__link {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #6793fc;
+  padding-left: 5px;
 }
 
 .card {
@@ -231,24 +151,21 @@ body {
   height: 100%;
 }
 
-.card__sidebar {
-  background-color: #463bfb;
+.card__navigation {
   height: 100%;
+  background-color: #1e21ff;
+  -webkit-animation: closeMenu 500ms linear both;
+          animation: closeMenu 500ms linear both;
+}
+
+.card__navigation.showMenu {
+  -webkit-animation: openMenu 500ms linear both;
+          animation: openMenu 500ms linear both;
+}
+
+.card__menu {
   position: relative;
-  width: 0px;
-}
-
-.sidebar {
-  width: 200px;
-}
-
-.sidebar__menu {
-  padding: 50px 20px 20px 20px;
-  color: #6793fc;
-}
-
-.sidebar__dashboard, .sidebar__message {
-  padding: 10px;
+  top: -50px;
 }
 
 .card__main {
