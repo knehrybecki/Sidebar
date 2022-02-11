@@ -1,0 +1,62 @@
+@keyframes openMenu
+    0% 
+        width: 0
+        
+    100%
+        width: 200px
+
+@keyframes closeMenu
+    0% 
+       width: 200px
+        
+    100%
+        width: 0
+
+.fa-solid.fa-xmark
+    display: none
+
+.navigation
+    @include displayflex(center,flex-start,row nowrap)
+    background-color: #1e21ff
+    height: 52px
+    gap: 15px
+    position: relative
+    top: -50px
+
+    &__bars
+        font-size: 25px
+        padding-left: 15px   
+        color: $menu-text-color
+
+    &__logo
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 18px
+        color: $menu-text-color
+        
+.logo
+    width: 150px
+    
+.menu
+    background-color: $sidebar-background
+    height: 100%
+
+.menu
+    &__list
+        padding: 50px 20px 20px 20px
+        display: flex
+        flex-flow: column nowrap
+        gap: 5px
+
+    &__item
+        color: $menu-sidebar-deactive
+        overflow: hidden
+        display: flex
+        flex-flow: row nowrap
+        gap: 5px 
+    
+    &__link
+        text-decoration-line: none
+        color: $menu-sidebar-deactive
+        padding-left: 5px
+    

@@ -9,10 +9,13 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__navigation">
+    </header>
+    <div class="card">
+        <div class="card__navigation">
             <div class="navigation">
                 <div class="navigation__bars">
                     <i class="fas fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
                 </div>
                 <div class="navigation__logo">
                     <div class="logo">
@@ -20,23 +23,25 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="card">
-        <div class="card__sidebar">
-            <div class="sidebar">
-                <div class="sidebar__menu">
-                        <div class="sidebar__dashboard">
+            <div class="card__menu">
+                <div class="menu">
+                    <div class="menu__list">
+                        <div class="menu__item">
                             <i class="fas fa-home"></i>
-                            Dashboard
+                            <a href="http://" class="menu__link">
+                                Dashboard
+                            </a>
                         </div>
-                        <div class="sidebar__message">
+                        <div class="menu__item">
                             <i class="fas fa-envelope"></i>
-                            Messages
+                            <a href="http://" class="menu__link">
+                                Messages
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <div class="card__main">
             <div class="main">
                 <div class="main__title">
@@ -57,5 +62,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
